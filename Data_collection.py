@@ -48,8 +48,11 @@ for i in df2.standard_value:
 
 selection = ['molecule_chembl_id', 'canonical_smiles', 'standard_value']
 df3 = df2[selection]
-df3 = pd.concat([df3, pd.Series(bioactivity_class)], axis=1) # put the bioactivity class to the dataframe
+print(df3)
+df3 = pd.concat([df3, pd.Series(bioactivity_class, name='bioactivity_class')], axis=1) # put the bioactivity class to the dataframe
+df3 = df3[df3.canonical_smiles.notna()]
 print(df3) #Print the created dataframe
+
 
 
 df3.to_csv('bioactivity_preprocessed_data.csv', index=False) #Save the created dataframe to a .csv file

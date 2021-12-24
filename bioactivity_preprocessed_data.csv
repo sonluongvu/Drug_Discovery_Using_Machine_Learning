@@ -1,4 +1,4 @@
-molecule_chembl_id,canonical_smiles,standard_value,0
+molecule_chembl_id,canonical_smiles,standard_value,bioactivity_class
 CHEMBL1087626,FC(F)(F)c1cccc(Nc2nc(-c3ccc(Cl)cc3)cs2)c1,8300.0,intermediate
 CHEMBL1076555,Oc1ccc(Nc2nc(-c3ccc(Cl)cc3)cs2)cc1,70.0,active
 CHEMBL1080890,Nc1ccc(Nc2nc(-c3ccc(Cl)cc3)cs2)cc1,80.0,active
@@ -446,9 +446,7 @@ CHEMBL3696896,Cc1cc2ccccc2n1-c1nc2c(c(NCc3ccccc3)n1)CNCC2,9150.0,intermediate
 CHEMBL3747647,Cc1cc2c(C(N)=O)cccc2n1-c1nc2c(c(NCc3ccccc3)n1)CNCC2,2860.0,intermediate
 CHEMBL3747448,Cc1cc2c(C(N)=O)cccc2n1-c1nc2c(c(NCc3ccccc3)n1)CCCC2,580.0,active
 CHEMBL3747513,Cc1cc2c(C(N)=O)cccc2n1-c1nc2c(c(NCc3ccccc3)n1)COCC2,1030.0,intermediate
-,,,intermediate
 CHEMBL3746353,COc1nc2ccccc2n1-c1nc2c(c(NCc3ccccc3)n1)CCCC2,4840.0,intermediate
-,,,active
 CHEMBL3747647,Cc1cc2c(C(N)=O)cccc2n1-c1nc2c(c(NCc3ccccc3)n1)CNCC2,2000.0,active
 CHEMBL3747448,Cc1cc2c(C(N)=O)cccc2n1-c1nc2c(c(NCc3ccccc3)n1)CCCC2,250.0,active
 CHEMBL3747513,Cc1cc2c(C(N)=O)cccc2n1-c1nc2c(c(NCc3ccccc3)n1)COCC2,490.0,intermediate
@@ -580,8 +578,6 @@ CHEMBL4573319,Cc1cc2c(NS(=O)(=O)C(F)(F)F)cccc2n1-c1nc2c(c(NCc3ccccc3)n1)COCC2,10
 CHEMBL4451017,Cc1cc2c(NS(=O)(=O)C3CC3)cccc2n1-c1nc2c(c(NCc3ccccc3)n1)COCC2,34.6,active
 CHEMBL4461462,Cc1cc2c(NS(=O)(=O)c3ccccc3)cccc2n1-c1nc2c(c(NCc3ccccc3)n1)COCC2,134.9,intermediate
 CHEMBL4461505,Cc1cc2c(NS(C)(=O)=O)cccc2n1-c1nc2c(c(NCc3ccccc3)n1)COCC2,36.4,active
-,,,active
-,,,active
 CHEMBL4574654,C=CC(=O)Nc1cccc2c1cc(C)n2-c1nc2c(c(NCc3ccncc3)n1)COCC2,5104.5,active
 CHEMBL4555198,Cc1cc2c(NC(=O)CN3CCCC3)cccc2n1-c1nc2c(c(NCc3ccccc3)n1)COCC2,448.7,active
 CHEMBL4473427,Cc1cc2c(NC(=O)/C=C/CN(C)C)cccc2n1-c1nc2c(c(NCc3ccccc3)n1)COCC2,387.1,active
@@ -593,10 +589,6 @@ CHEMBL3747513,Cc1cc2c(C(N)=O)cccc2n1-c1nc2c(c(NCc3ccccc3)n1)COCC2,27.0,active
 CHEMBL4581661,Cc1cc2c(C(N)=O)cccc2n1-c1nccc(NCc2ccccc2)n1,160.9,active
 CHEMBL4439188,Cc1cc2c(C(N)=O)cccc2n1-c1nc2c(c(NCc3ccccc3)n1)CCCCCC2,119.7,active
 CHEMBL4455739,Cc1cc2c(C(N)=O)cccc2n1-c1nc2c(c(NCc3ccccc3)n1)CCCCC2,82.8,inactive
-,,,intermediate
-,,,active
-,,,active
-,,,active
 CHEMBL4445574,CC(=O)Nc1cccc2c1ccn2-c1nc2c(c(NCc3ccccc3)n1)COCC2,922.1,active
 CHEMBL4468726,Cc1cc2c(C(N)=S)cccc2n1-c1nc2c(c(NCc3ccccc3)n1)COCC2,192.6,active
 CHEMBL4280125,CC(C)N1CCN(CCNC2CCN(c3cccc(-c4cc5cc(F)ccc5[nH]4)c3)CC2)CC1,20.0,inactive
