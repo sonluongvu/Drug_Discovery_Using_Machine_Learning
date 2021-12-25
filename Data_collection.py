@@ -28,7 +28,7 @@ df.to_csv('bioactivity_data.csv', index = False)
 
 # Handling missing data:
 
-df2 = df[df.standard_value.notna()]
+df2 = df[df.standard_value.notna()].reset_index()
 print(df2) #Print out data without including missing data
 
 # Data preprocessing:
@@ -47,10 +47,9 @@ for i in df2.standard_value:
 ## Create a dataframe contains molecule_chembl_id, canonical_smiles, standard_value and bioactivity_class:
 
 selection = ['molecule_chembl_id', 'canonical_smiles', 'standard_value']
-df3 = df2[selection]
+df3 = df2[selection].reset_index()
 print(df3)
 df3 = pd.concat([df3, pd.Series(bioactivity_class, name='bioactivity_class')], axis=1) # put the bioactivity class to the dataframe
-df3 = df3[df3.canonical_smiles.notna()]
 print(df3) #Print the created dataframe
 
 
