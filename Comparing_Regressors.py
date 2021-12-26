@@ -5,7 +5,8 @@ import pandas as pd
 import seaborn as sns
 from sklearn.model_selection import train_test_split
 import lazypredict
-from lazypredict.Supervised import Regressor
+from lazypredict.Supervised import LazyClassifier
+from lazypredict.Supervised import LazyRegressor
 from sklearn.feature_selection import VarianceThreshold
 
 
@@ -27,7 +28,7 @@ X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_
 # Compare ML algorithms:
 
 ## Defines and builds the lazyclassifier:
-clf = Regressor(VERBOSE=0, ignore_warnings=True, custom_metric=None)
+clf = LazyRegressor(verbose=0, ignore_warnings=True, custom_metric=None)
 models_train,prediction_train = clf.fit(X_train, X_train, Y_train, Y_train)
 models_test,predictions_test = clf.fit(X_train, X_test, Y_train, Y_test)
 
