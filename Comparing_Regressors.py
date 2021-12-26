@@ -4,11 +4,11 @@
 import pandas as pd
 import seaborn as sns
 from sklearn.model_selection import train_test_split
-import lazypredict
 from lazypredict.Supervised import LazyClassifier
 from lazypredict.Supervised import LazyRegressor
 from sklearn.feature_selection import VarianceThreshold
-
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 # Load the dataset:
@@ -36,3 +36,17 @@ models_test,predictions_test = clf.fit(X_train, X_test, Y_train, Y_test)
 print(prediction_train)
 
 print(predictions_test)
+
+#train["R-Squared"] = [0 if i < 0 else i for i in train.iloc[:,0] ]
+plt.figure(figsize=(25, 10))
+sns.set_theme(style="whitegrid")
+ax = sns.barplot(y=prediction_train.index, x="R-Squared", data=prediction_train)
+ax.set(xlim=(0, 1))
+plt.savefig('R_squared_of_regression_models.pdf')
+
+# Bar plot of RMSE values
+plt.figure(figsize=(25, 10))
+sns.set_theme(style="whitegrid")
+ax = sns.barplot(y=prediction_train.index, x="RMSE", data=prediction_train)
+ax.set(xlim=(0, 10))
+plt.savefig('RMSE_of_regression_models.pdf')
